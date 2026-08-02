@@ -1,0 +1,593 @@
+/* ==========================================
+   WP BAITS - GLOWNE STYLE STRONY
+   RESET I PODSTAWOWE USTAWIENIA
+   ========================================== */
+
+
+/* USUNIECIE DOMYSLNYCH ODSTEPÓW PRZEGLADARKI */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* PODSTAWOWY STYL CALEJ STRONY */
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #f5f5f5;
+
+    color: #222;
+
+    line-height: 1.6;
+
+}
+
+
+
+/* USUNIECIE PODKRESLENIA Z LINKOW */
+
+a {
+
+    text-decoration: none;
+
+    color: inherit;
+
+}
+
+
+
+/* OBRAZY ZAWSZE DOPASOWANE */
+
+img {
+
+    max-width: 100%;
+
+    display: block;
+
+}
+
+/* ==========================================
+   HEADER - GORNE MENU WP BAITS
+   ========================================== */
+
+
+/* GLOWNY PASEK NAWIGACJI */
+
+.site-header {
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 20px 60px;
+
+    background-color: #111;
+
+    color: white;
+
+}
+
+
+
+/* LOGO WP BAITS */
+
+.logo a {
+
+    font-size: 32px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    color: white;
+
+}
+
+
+
+/* MENU GLOWNE */
+
+.main-navigation {
+
+    display: flex;
+
+    gap: 30px;
+
+}
+
+
+
+/* LINKI MENU */
+
+.main-navigation a {
+
+    color: white;
+
+    font-size: 16px;
+
+    transition: 0.3s;
+
+}
+
+
+
+/* EFEKT PO NAJECHANIU */
+
+.main-navigation a:hover {
+
+    color: #c89b3c;
+
+}
+
+
+
+/* PRZYCISK SHOP NOW */
+
+.header-button a {
+
+    background-color: #c89b3c;
+
+    color: white;
+
+    padding: 12px 25px;
+
+    border-radius: 5px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+
+}
+
+
+
+/* EFEKT PRZYCISKU */
+
+.header-button a:hover {
+
+    background-color: #a77d25;
+
+}
+
+/* ==========================================
+   HERO SECTION - GLOWNY BANER STRONY
+   ========================================== */
+
+
+/* GLOWNY OBSZAR HERO */
+
+.hero-section {
+
+    min-height: 80vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    position: relative;
+
+    background-color: #222;
+
+    color: white;
+
+    padding: 80px 20px;
+
+}
+
+
+
+/* WARSTWA TLA - TUTAJ POZNIEJ DAMY ZDJECIE */
+
+.hero-background {
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+}
+
+
+
+/* ZAWARTOSC TEKSTOWA */
+
+.hero-content {
+
+    position: relative;
+
+    max-width: 900px;
+
+    z-index: 2;
+
+}
+
+
+
+/* GLOWNY NAGLOWEK */
+
+.hero-content h1 {
+
+    font-size: 55px;
+
+    line-height: 1.2;
+
+    margin-bottom: 25px;
+
+    letter-spacing: 1px;
+
+}
+
+
+
+/* OPIS POD NAGLOWKIEM */
+
+.hero-content p {
+
+    font-size: 20px;
+
+    max-width: 700px;
+
+    margin: 0 auto 35px;
+
+    color: #ddd;
+
+}
+
+
+
+/* PRZYCISK HERO */
+
+.hero-button {
+
+    display: inline-block;
+
+    background-color: #c89b3c;
+
+    color: white;
+
+    padding: 15px 35px;
+
+    border-radius: 5px;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+
+}
+
+
+
+/* EFEKT NAJECHANIA */
+
+.hero-button:hover {
+
+    background-color: #a77d25;
+
+}
+
+
+/* ==========================================
+   SHOP SECTION - SKLEP WP BAITS
+   ========================================== */
+
+
+/* GLOWNA SEKCJA SKLEPU */
+
+.shop-section {
+
+    padding: 80px 60px;
+
+    background-color: #f7f7f7;
+
+}
+
+
+
+/* TYTUL SEKCJI */
+
+.section-title {
+
+    text-align: center;
+
+    max-width: 800px;
+
+    margin: 0 auto 50px;
+
+}
+
+
+
+.section-title h2 {
+
+    font-size: 42px;
+
+    margin-bottom: 15px;
+
+    color: #111;
+
+}
+
+
+
+.section-title p {
+
+    font-size: 18px;
+
+    color: #555;
+
+}
+
+
+
+/* KONTENER PRODUKTOW */
+
+.shop-container {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+
+}
+
+
+
+/* KARTA PRODUKTU */
+
+.shop-card {
+
+    background-color: white;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+
+    transition: 0.3s;
+
+}
+
+
+
+/* EFEKT PO NAJECHANIU */
+
+.shop-card:hover {
+
+    transform: translateY(-8px);
+
+}
+
+
+
+/* ZDJECIE PRODUKTU */
+
+.shop-image {
+
+    width: 100%;
+
+    height: 300px;
+
+    background-color: #ddd;
+
+}
+
+
+
+.shop-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+}
+
+
+
+/* INFORMACJE PRODUKTU */
+
+.shop-content {
+
+    padding: 25px;
+
+}
+
+
+
+.shop-content h3 {
+
+    font-size: 24px;
+
+    margin-bottom: 15px;
+
+}
+
+
+
+.shop-content p {
+
+    color: #555;
+
+    margin-bottom: 20px;
+
+}
+
+
+
+/* OPCJE PRODUKTU */
+
+.product-options p {
+
+    font-size: 15px;
+
+    margin-bottom: 8px;
+
+}
+
+
+
+/* DOSTEPNOSC */
+
+.stock-status {
+
+    color: green;
+
+    font-weight: bold;
+
+    margin: 15px 0;
+
+}
+
+
+
+/* CENA */
+
+.price {
+
+    display: block;
+
+    font-size: 28px;
+
+    font-weight: bold;
+
+    margin-bottom: 20px;
+
+}
+
+
+
+/* PRZYCISK ZAKUPU */
+
+.buy-button {
+
+    display: inline-block;
+
+    background-color: #111;
+
+    color: white;
+
+    padding: 12px 25px;
+
+    border-radius: 5px;
+
+    font-weight: bold;
+
+}
+
+
+
+.buy-button:hover {
+
+    background-color: #c89b3c;
+
+}
+
+
+/* ==========================================
+   DOPRACOWANIE KART PRODUKTOW
+   ========================================== */
+
+
+.shop-card {
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    background: white;
+
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+
+}
+
+
+.shop-image {
+
+    height: 320px;
+
+    overflow: hidden;
+
+}
+
+
+.shop-image img {
+
+    transition: 0.5s;
+
+}
+
+
+.shop-card:hover .shop-image img {
+
+    transform: scale(1.05);
+
+}
+
+
+
+.product-badge {
+
+    display: inline-block;
+
+    background-color: #c89b3c;
+
+    color: white;
+
+    padding: 5px 12px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    margin-bottom: 15px;
+
+}
+
+
+
+.price {
+
+    color: #111;
+
+}
+
+
+
+.buy-button {
+
+    width: 100%;
+
+    text-align: center;
+
+    background-color: #111;
+
+}
+
+
+
